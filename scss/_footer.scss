@@ -1,5 +1,6 @@
 // Styling for the footer
 footer {
+  background: #ccc; 
   padding: 25px 0;
   text-align: center;
   span.copyright {
@@ -14,6 +15,23 @@ footer {
     margin-bottom: 0;
     text-transform: none;
     @include heading-font;
+  }
+  ul {
+    li {
+      display: inline-block;
+      a {
+        color: #666;
+      }
+      &:after {
+        content: ' - '; 
+      }
+
+      &:nth-last-child(1) {
+        &:after {
+          content: '';
+        }
+      }
+    }
   }
 }
 

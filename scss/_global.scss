@@ -4,6 +4,22 @@ body {
   @include body-font;
 }
 
+.parceiros {
+  border-top:1px solid #ddd;
+}
+
+.block-how-to {
+  margin-bottom: 24px;
+}
+
+.depo-text {
+  &:before {
+    content: "\0022";
+    font-size: 45px;
+    font-family: Garamond, "Times New Roman", Georgia, serif;
+  }
+}
+
 p {
   line-height: 1.75;
 }
@@ -30,7 +46,8 @@ h6 {
 }
 
 section {
-  padding: 100px 0;
+  padding: 120px 0;
+
   h2.section-heading {
     font-size: 40px;
     margin-top: 0;
@@ -47,7 +64,7 @@ section {
 }
 @media(min-width:768px) {
   section {
-    padding: 40px 0;
+    //padding: 40px 0;
   }
 }
 
